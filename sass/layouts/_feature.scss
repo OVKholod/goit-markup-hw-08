@@ -1,0 +1,40 @@
+/* feature */
+
+.feature,
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature__list {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.feature__item {
+  display: block;
+  width: 270px;
+}
+
+.feature__group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+
+  background-color: var(--secondary-bg-color);
+
+  margin-bottom: 30px;
+}
+
+.feature__description {
+  line-height: 1.71;
+  margin-top: 10px;
+}
+
+.feature__container {
+  display: flex;
+}

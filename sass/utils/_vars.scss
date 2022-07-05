@@ -1,0 +1,34 @@
+/* Основний колір текста #757575 */
+/* Допоміжний колір текста #212121 */
+/* Акцент #2196F3 */
+/* Основний колір фона #FFFFFF */
+/* Допоміжний колір фона #F5F4FA */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-text-color: #ffffff;
+  --acceent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+
+  --main-font-style: Roboto, sans-serif;
+
+  --anim: 250ms ease-in-out;
+}
+
+// visually-hidden
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
