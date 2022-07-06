@@ -60,6 +60,11 @@ img {
   height: auto;
 }
 
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -108,15 +113,15 @@ img {
 .mobile-menu__container {
   display: none;
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 48px 40px;
-  background-color: var(--primary-bg-color);
+  top: 100%;
+  left: 0;
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 100vh;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: var(--primary-bg-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 .mobile-menu__container.is-open {
   display: block;
@@ -469,21 +474,41 @@ img {
   display: none;
 }
 
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--primary-bg-color);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.mobile-menu__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.mobile-menu.is-open .mobile-menu__container {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+
+.mobile-menu__nav {
+  color: var(--title-text-color);
+  font-size: 40px;
+  line-height: 1.18;
+}
+
+.mobile-menu__phone {
+  color: var(--acceent-color);
+  font-size: 34px;
+  line-height: 1.18;
+}
+
+.mobile-menu__mail {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.mobile-menu__list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--acceent-color);
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /* hero */
