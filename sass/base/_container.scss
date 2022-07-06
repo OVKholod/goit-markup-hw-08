@@ -1,20 +1,83 @@
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
-.header__container,
+.header__container {
+  display: flex;
+  align-items: center;
+
+  // position: relative;
+}
+
 .nav__container {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.mobile-menu__container {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  // width: 100%;
+  padding: 48px 40px;
+  background-color: var(--primary-bg-color);
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.hero__container {
+  padding: 118px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature__container {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.team__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.clients__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer__container {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  justify-content: center;
+
+  // display: flex;
+  // justify-content: space-between;
 }
 
 .button-container {
